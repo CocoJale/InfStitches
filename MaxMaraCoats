@@ -91,7 +91,7 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
 wait(0.3)
 x=-4217
 y=318
-z=1403
+z=-1403
 
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
 wait(1)
