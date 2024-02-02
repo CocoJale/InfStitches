@@ -1,12 +1,101 @@
---[[
- .____                  ________ ___.    _____                           __                
- |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
- |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
- |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
- |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
-         \/          \/         \/    \/                \/     \/     \/                   
-          \_Welcome to LuaObfuscator.com   (Alpha 0.9.19) ~  Much Love, Ferib 
+GameName = "MaxMaraCoats"
 
-]]--
+tab1name = "main"
 
-local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or bit ;local v4=v3.bxor;local v5=table.concat;local v6=table.insert;local function v7(v12,v13)local v14={};for v19=1, #v12 do v6(v14,v0(v4(v1(v2(v12,v19,v19 + 1 )),v1(v2(v13,1 + (v19% #v13) ,1 + (v19% #v13) + 1 )))%256 ));end return v5(v14);end GameName=v7("\252\194\195\8\231\169\198\61\222\194\207\54","\126\177\163\187\69\134\219\167");tab1name=v7("\14\204\35\203","\156\67\173\74\165");local v8=loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))();local v9=v8:NewWindow(GameName);local v10=v9:NewSection(tab1name);v10:CreateButton(v7("\29\185\79\37\168\47\82\55\191\76\5","\38\84\215\41\118\220\70"),function(v15)local v16=0 + 0 ;local v17;local v18;while true do if (v16==(2 -1)) then while true do if (v17==(0 + 0)) then v18=true;while true do local v20=0 -0 ;local v21;while true do if (v20==(952 -(802 + 150))) then v21={[1]=v7("\124\19\52\23\242\5","\158\48\118\66\114")};game:GetService(v7("\153\33\0\58\122\166\250\191\33\20\5\103\170\233\170\35\21","\155\203\68\112\86\19\197")).Packages._Index:FindFirstChild(v7("\85\209\51\245\84\118\236\251\77\226\61\242\73\108\197\169\8\136\120\173","\152\38\189\86\156\32\24\133")).knit.Services.ObbyService.RF.TargetTimeAchieved:InvokeServer(unpack(v21));v20=2 -1 ;end if (v20==(1 -0)) then wait();break;end end end break;end end break;end if (v16==(0 + 0)) then v17=997 -(915 + 82) ;v18=nil;v16=1;end end end);local v11=v9:NewSection(v7("\223\88\164\73\246\86\171\67","\38\156\55\199"));
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+
+local GameName = Library:NewWindow(GameName)
+
+local Tab1 = GameName:NewSection(tab1name)
+
+Tab1:CreateToggle("AutoObby1", function(value)
+_G.AutoObby = value
+while _G.AutoObby == true do
+x=-4698
+y=13
+z=-5
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+wait(0.3)
+x=-5340
+y=283
+z=-32 
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+wait(1)
+end
+end) 
+
+Tab1:CreateToggle("AutoObby2", function(value)
+_G.AutoObby = value
+while _G.AutoObby == true do
+x=-4665
+y=13
+z=-84
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+wait(0.3)
+x=-5429
+y=250
+z=-885
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+wait(1)
+end
+end) 
+
+Tab1:CreateToggle("AutoObby3", function(value)
+_G.AutoObby = value
+while _G.AutoObby == true do
+x=-4662
+y=14
+z=71
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+wait(0.3)
+x=-5330
+y=348
+z=618
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+wait(1)
+end
+end) 
+
+Tab1:CreateToggle("AutoObby4", function(value)
+_G.AutoObby = value
+while _G.AutoObby == true do
+x=-4589
+y=12
+z=95
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+wait(0.3)
+x=-4690
+y=276
+z=1107
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+wait(1)
+end
+end) 
+
+Tab1:CreateToggle("AutoObby5", function(value)
+_G.AutoObby = value
+while _G.AutoObby == true do
+x=-4588
+y=13
+z=-117
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+wait(0.3)
+x=-4217
+y=318
+z=1403
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+wait(1)
+end
+end) 
+
+local Tab2 = GameName:NewSection("Cocojale")
