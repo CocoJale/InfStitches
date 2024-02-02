@@ -1,6 +1,6 @@
 GameName = "MaxMaraCoats"
 
-tab1name = "main"
+tab1name = "Main"
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
 
@@ -97,5 +97,15 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
 wait(1)
 end
 end) 
+
+Tab1:CreateButton("ObbyPlace", function(value)
+for i = 1, 200 do
+x=-4588
+y=13
+z=-117
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+end
+ end)
 
 local Tab2 = GameName:NewSection("Cocojale")
